@@ -1,0 +1,32 @@
+.avtoRepContainer {
+  flex-direction: column;
+  height: 430px;
+  background: url("../../img/avtoRep.svg") 0 0 no-repeat,
+    linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%) 0 0 no-repeat;
+  color: #fff;
+}
+.avtoRepTitle {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.avtoRepSubtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  height: 66px;
+  width: 40%;
+  text-align: center;
+}
+.avtoRepBtn {
+  width: 265px;
+  height: 60px;
+  padding: 20px 50px 20px 50px;
+}
+.avtoRepBtn button {
+  padding: 20px 50px 20px 50px;
+  border-radius: 10px;
+  border: 0;
+  color: #1565c0;
+}

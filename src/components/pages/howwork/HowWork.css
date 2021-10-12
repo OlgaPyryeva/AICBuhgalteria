@@ -1,0 +1,71 @@
+.howWorkContainer {
+  flex-direction: column;
+  height: 700px;
+  border: 1px solid rgb(190, 189, 189);
+}
+.howWorkTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 50px;
+}
+
+.regTitle,
+.signTitle {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.bookTitle {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.regSubtitle,
+.signSubtitle {
+  text-align: end;
+}
+.bookSubtitle {
+  text-align: start;
+}
+
+.regBlock,
+.signBlock {
+  display: flex;
+  flex-direction: row;
+}
+.regBlock {
+  margin-right: 50%;
+}
+.regBlock img {
+  background: rgba(117, 87, 142, 0.2);
+  border-radius: 50%;
+}
+.bookBlock {
+  margin-left: 46%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bookBlock img {
+  background: rgba(78, 141, 143, 0.2);
+  border-radius: 50%;
+}
+.signBlock {
+  margin-right: 50%;
+}
+.signBlock img {
+  background: #1565c0;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+.pointsImg {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.line {
+  margin-left: 10px;
+  border-left: 1px solid rgba(145, 158, 171, 0.4);
+  height: 70px;
+}

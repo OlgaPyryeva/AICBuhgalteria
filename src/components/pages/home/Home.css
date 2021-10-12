@@ -1,0 +1,52 @@
+.homeContainer {
+  height: 700px;
+  background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 45%;
+  height: 450px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  z-index: 2;
+}
+.homeTitle {
+  font-size: 2em;
+}
+.homeSubtitle {
+  font-size: 1em;
+  padding: 30px 30px 30px 0;
+}
+
+.homeButtons button {
+  width: 190px;
+  height: 60px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.homeTitle {
+  margin-top: 45%;
+}
+.BtnTry {
+  background-color: #fff;
+  color: #1565c0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.BtnAbout {
+  color: #fff;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+}
+.homeImg {
+  width: 45%;
+  margin-right: 15%;
+  margin-top: 10%;
+  z-index: 1;
+}

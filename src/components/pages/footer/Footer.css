@@ -1,0 +1,100 @@
+.footerContainer {
+  height: 705px;
+  flex-direction: column;
+  background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
+}
+.footerBlocks {
+  display: flex;
+  flex-direction: row;
+}
+.leftBlock {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 10%;
+  margin-right: 10px;
+}
+
+.footerLogo {
+  width: 100px;
+  height: 43px;
+  padding-top: 50px;
+}
+.footerFone,
+.footerEmail {
+  font-size: 30px;
+  line-height: 35px;
+  color: #fff;
+}
+.footerFone {
+  margin: 30px 30px 0 0px;
+}
+.footerEmail {
+  margin: 10px 30px 35px 0px;
+}
+.footerCompanyInfo {
+  font-size: 1em;
+  color: #fff;
+  margin: 35px 35px 35px 0;
+}
+.footerBtn button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  margin: 25px;
+  cursor: pointer;
+}
+.footerFormBtn button {
+  cursor: pointer;
+}
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 10%;
+  margin-left: 10px;
+}
+.rightBlockTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.footerForm input {
+  height: 50px;
+  width: 370px;
+  padding: 10px 0 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 0;
+  background: #6cc5de;
+  color: #fff;
+}
+.footerFormTextarea textarea {
+  height: 130px;
+  width: 370px;
+  padding: 10px 0 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 0;
+  background: #6cc5de;
+  color: #fff;
+}
+.footerForm button {
+  height: 60px;
+  width: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #1565c0;
+  padding: 10px 0 10px 20px;
+  margin: 5px;
+}
+.data {
+  margin-top: 50px;
+}
