@@ -13,8 +13,8 @@
   position: fixed;
   top: 0;
   left: 10%;
-  /* background-color: Transparent; */
-  background-color: rgba(177, 176, 176, 0.2);
+  background-color: Transparent;
+  /* background-color: rgba(177, 176, 176, 0.2); */
   z-index: 3;
 }
 
