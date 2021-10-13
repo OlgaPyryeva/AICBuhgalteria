@@ -10,12 +10,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 10%;
-  background-color: Transparent;
+  margin-left: 10%;
+  /* background-color: Transparent; */
   /* background-color: rgba(177, 176, 176, 0.2); */
-  z-index: 3;
+  background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
+  /* z-index: 3; */
 }
 
 .logo img {
