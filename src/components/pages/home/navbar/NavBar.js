@@ -31,7 +31,7 @@ export default function NavBar() {
           </li>
 
           <li>
-            <Link to="/login">
+            <Link to="/SignIn">
               <button>Подключиться</button>
             </Link>
           </li>

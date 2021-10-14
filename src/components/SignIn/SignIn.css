@@ -1,0 +1,135 @@
+.loginWrapper {
+  background: #000000;
+  opacity: 0.5;
+}
+.loginContainer {
+  height: 526px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+.loginContainerLeft {
+  width: 60%;
+  height: 526px;
+  background: #ffffff;
+  border-radius: 15px 0px 0px 15px;
+}
+.loginContainerRight {
+  width: 28%;
+  height: 526px;
+  background: url("../img/loginRight.svg"),
+    linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
+  border-radius: 0px 15px 15px 0px;
+}
+.loginContainerRight img {
+  position: relative;
+  right: 100%;
+  z-index: 3;
+}
+.loginCloseBtn {
+  position: relative;
+  z-index: 3;
+  left: 142%;
+  top: 3.3%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.loginCloseBtn button {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+.loginTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  color: #1565c0;
+  text-align: center;
+  margin: 33px 0 0 20px;
+}
+.loginSubtitle {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 156%;
+  color: #595e64;
+  text-align: center;
+}
+.socialNetworksLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.loginFields {
+  display: flex;
+  flex-direction: column;
+}
+.loginFields input {
+  width: 60%;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  padding: 0 5px;
+  font-size: 0.8em;
+}
+.loginEmail {
+  position: relative;
+  left: 20%;
+}
+.loginPassword {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 12.5%;
+}
+.loginPassword label {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  left: 10%;
+  height: 15px;
+  font-size: 0.8em;
+  color: #595e64;
+}
+.loginPassword img {
+  position: relative;
+  right: 8%;
+  z-index: 3;
+}
+.newPassword {
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 167%;
+  color: #2f2f2f;
+  text-align: right;
+  margin-right: 18%;
+}
+.loginEnterBtn {
+  width: 61%;
+  height: 60px;
+  background: #1565c0;
+  border-radius: 10px;
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 148%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border: 0;
+}
+.loginRegBtn {
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 167%;
+  color: #2f2f2f;
+  text-align: center;
+  margin: 30px 0;
+}
