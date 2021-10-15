@@ -3,11 +3,12 @@ import logo from "../../../img/logo.svg";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { setPopup, popup } = props;
   return (
-    <header class="header">
-      <div class="logo">
-        <img src={logo} alt={"logo"} />
+    <header className="header">
+      <div className="logo">
+        <img src={logo} alt="logo" />
       </div>
       <nav className="menu">
         <ul>
@@ -31,9 +32,7 @@ export default function NavBar() {
           </li>
 
           <li>
-            <Link to="/SignIn">
-              <button>Подключиться</button>
-            </Link>
+            <button onClick={() => setPopup(!popup)}>Подключиться </button>
           </li>
         </ul>
       </nav>
