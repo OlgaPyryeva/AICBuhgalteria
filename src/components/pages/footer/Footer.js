@@ -26,15 +26,22 @@ export default function Footer() {
               ЗАО "Альфа-банк" 220013 г. Минск, ул. Сурганова, 43‑47
             </div>
             <div className="footerBtn">
-              <button>
-                <img src={gmail} alt="{gmail}" />
-              </button>
-              <button>
-                <img src={facebook} alt="{facebook}" />
-              </button>
-              <button>
-                <img src={twitter} alt="{twitter}" />
-              </button>
+              <div>
+                <button className="gmail">
+                  <img src={gmail} alt="{gmail}" />
+                </button>
+              </div>
+              <div>
+                <button className="facebook">
+                  <img src={facebook} alt="{facebook}" />
+                </button>
+              </div>
+
+              <div>
+                <button className="twitter">
+                  <img src={twitter} alt="{twitter}" />
+                </button>
+              </div>
             </div>
           </div>
           <div className="rightBlock">
