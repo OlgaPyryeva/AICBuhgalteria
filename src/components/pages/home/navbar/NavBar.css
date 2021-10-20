@@ -1,72 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
+.css-ancrnh-MuiButtonBase-root-MuiIconButton-root {
+  display: none !important;
 }
-.header {
-  width: 80%;
-  height: 110px;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 10%;
-  /* background-color: Transparent; */
-  /* background-color: rgba(177, 176, 176, 0.2); */
-  background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
-  /* z-index: 3; */
+.MuiPaper-root {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-left: 9.5% !important;
+  padding-right: 9.5% !important;
 }
-
-.logo img {
-  padding-left: 50px;
-}
-
-.header .menu ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
+.MuiButton-root {
+  width: 200px !important;
+  height: 60px !important;
+  background-color: #fff !important;
+  color: #1565c0 !important;
+  display: block !important;
+  font-weight: bold !important;
+  font-size: 0.875em !important;
+  line-height: 148% !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
 }
 
-.header .menu ul li {
-  margin: 40px 20px;
-  font-size: 1em;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
+.css-1juivf6-MuiTypography-root {
+  font-weight: 500 !important;
+  font-size: 1em !important;
+  line-height: 100% !important;
+  text-align: center !important;
+  cursor: pointer !important;
 }
 
-.header .menu ul a {
-  text-decoration: none;
-  font-weight: normal;
-  color: #fff;
-}
-.menu button {
-  width: 200px;
-  height: 60px;
-  background-color: #fff;
-  color: #1565c0;
-  font-size: 14px;
-  border: 0;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 900px) {
-  .menu ul li span {
-    margin: auto;
+@media screen and (max-width: 600px) {
+  .css-ancrnh-MuiButtonBase-root-MuiIconButton-root {
+    display: block !important;
+    margin: 0 50px !important;
+  }
+  .css-1juivf6-MuiTypography-root {
+    display: none !important;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .header {
-    flex-direction: column;
-  }
-  .header .menu ul {
-    flex-direction: column;
-    justify-content: left;
-    align-self: center;
-  }
-  .header .menu ul li {
-    margin: 5px;
-  }
+.bg-color {
+  background: linear-gradient(
+    110.34deg,
+    #1565c0 -2.02%,
+    #13f1fc 129.72%
+  ) !important;
 }

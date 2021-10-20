@@ -16,7 +16,7 @@ export default function Layout() {
   return (
     <BrowserRouter>
       <NavBar setPopup={setPopup} popup={popup} />
-      {popup && <SignIn setPopup={setPopup} popup={popup} />}/>
+      {popup && <SignIn setPopup={setPopup} popup={popup} />}
       <Switch>
         <Route exact path="/" render={() => <MainPage popup={popup} />} />
         <Route path="/SignUp" render={() => <SignUp />} />

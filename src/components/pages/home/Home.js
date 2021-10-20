@@ -19,8 +19,8 @@ export default function Home() {
             <button className="BtnAbout">Как это работает</button>
           </div>
         </div>
-        <div className="homeImg">
-          <img src={robot} alt="{robot}" />
+        <div className="homeImgContainer">
+          <img src={robot} alt="{robot}" className="homeImg" />
         </div>
       </div>
     </div>
