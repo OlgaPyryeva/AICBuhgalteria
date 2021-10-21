@@ -19,8 +19,8 @@ export default function ButtonAppBar() {
   }, []);
 
   return (
-    <Box sx={{ flexGrow: 1 }} className={scroll ? "bg-color" : "bg-white"}>
-      <AppBar>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar className={scroll ? "bg-color" : "bg-white"}>
         <Toolbar>
           <Logo />
           <IconButton
