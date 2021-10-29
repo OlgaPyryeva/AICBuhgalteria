@@ -43,6 +43,7 @@ export default function WhyBetter() {
           </p>
         </div>
       </div>
+      <div id="benefits" className="linkPlace"></div>
     </div>
   );
 }

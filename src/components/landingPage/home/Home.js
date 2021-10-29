@@ -15,8 +15,12 @@ export default function Home() {
             отчетности для ИП, которая экономит ваше время и ваши деньги
           </div>
           <div className="homeButtons">
-            <button className="BtnTry">Попробовать</button>
-            <button className="BtnAbout">Как это работает</button>
+            <div className="BtnTry">
+              <button>Попробовать</button>
+            </div>
+            <div className="BtnAbout">
+              <button>Как это работает</button>
+            </div>
           </div>
         </div>
         <div className="homeImgContainer">

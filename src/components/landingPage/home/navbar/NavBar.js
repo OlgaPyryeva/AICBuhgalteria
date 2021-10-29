@@ -40,16 +40,16 @@ export default function ButtonAppBar() {
             <Link to="/#whyBetter">Почему AIC </Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Наши преимущества
+            <Link to="/#benefits">Наши преимущества </Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            О нас пишут
+            <Link to="/#abouUs">О нас пишут </Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Тарифы
+            <Link to="/#tarifs"> Тарифы </Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Новости
+            <Link to="/#news">Новости </Link>
           </Typography>
           <Button color="inherit">Подключиться</Button>
         </Toolbar>

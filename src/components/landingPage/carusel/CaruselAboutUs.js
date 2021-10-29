@@ -16,6 +16,7 @@ export default class extends React.Component {
           <img src={otziv} alt="{otziv}" />
           <img src={otziv} alt="{otziv}" />
         </Carousel>
+        <div id="tarifs" className="linkPlace"></div>
       </div>
     );
   }

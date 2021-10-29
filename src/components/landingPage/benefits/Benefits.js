@@ -10,102 +10,105 @@ export default function Benefits() {
     <div className="benefitsWrapper">
       <div className="benefitsMainTitle">Наши преимущества</div>
       <div className="benefitsContainer">
-        <div>
-          <div className="benefitsTitle">
-            <img src={checkMarkP} alt="{checkMarkP}" />
-            <h3>Уведомления</h3>
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
+            <img src={checkMarkP} alt="{checkMarkP}" />{" "}
           </div>
-          <div className="benefitsSubtitle">
-            <p>Система заранее напомнит о необходимости подачи всех отчетов</p>
+          <div className="benefitsText">
+            <div className="benefitsTitle">Уведомления</div>
+            <div className="benefitsSubtitle">
+              Система заранее напомнит о необходимости подачи всех отчетов
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkB} alt="{checkMarkB}" />
-            <h3>Формирование отчетов</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle">Формирование отчетов</div>
+            <div className="benefitsSubtitle">
               Система автоматически сформирует необходимые отчеты на основании
               ваших данных
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkB} alt="{checkMarkB}" />
-            <h3>Агрегатор</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle">Агрегатор</div>
+            <div className="benefitsSubtitle">
               Система объединяет информацию от всех государственных интернет
               порталов, участвующих в процедуре подачи необходимых отчетов
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
-            <img src={checkMarkP} alt="{checkMarkP}" />
-            <h3>Прогнозирование затрат</h3>
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
+            <img src={checkMarkP} alt="{checkMarkP}" />{" "}
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle"> Прогнозирование затрат </div>
+            <div className="benefitsSubtitle">
               Система динамически рассчитывает сумму налогов исходя из
               оперативно вносимых данных в книги
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkG} alt="{checkMarkG}" />
-            <h3>Работа с ЭЦП</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle">Работа с ЭЦП </div>
+            <div className="benefitsSubtitle">
               Все что требуется для подачи отчета - подтвердить его отправку
               через СМС
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkV} alt="{checkMarkV}" />
-            <h3>Интерактивное уведомление</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle"> Интерактивное уведомление </div>
+            <div className="benefitsSubtitle">
               Система в режиме онлайн контролирует статус поданных отчетов и
               уведомляет о необходимости подачи уточненных отчетов
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkV} alt="{checkMarkV}" />
-            <h3>Контроль</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle"> Контроль </div>
+            <div className="benefitsSubtitle">
               Вы всегда будете знать о статусе вашей отчётности, своевременности
               и правильности подачи, независимо от того, кто ведет бухгалтерию -
               вы или ваш бухгалтер
-            </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="benefitsTitle">
+        <div className="benefitsPoint">
+          <div className="benefitsImg">
             <img src={checkMarkG} alt="{checkMarkG}" />
-            <h3>Адаптивные шаблоны документов</h3>
           </div>
-          <div className="benefitsSubtitle">
-            <p>
+          <div className="benefitsText">
+            <div className="benefitsTitle">Адаптивные шаблоны документов</div>
+            <div className="benefitsSubtitle">
               Система позволит сформировать уже предварительно заполненные
               документы по основному виду деятельности, кадровому учету, счета,
               фирменный бланк и т.д.
-            </p>
+            </div>
           </div>
         </div>
       </div>
+      <div id="abouUs" className="linkPlace"></div>
     </div>
   );
 }

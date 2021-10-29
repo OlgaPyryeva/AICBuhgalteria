@@ -12,6 +12,7 @@ export default function AvtoRep() {
       <div className="avtoRepBtn">
         <button>Попробовать бесплатно</button>
       </div>
+      <div id="whyBetter" className="linkPlace"></div>
     </div>
   );
 }
