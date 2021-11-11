@@ -8,6 +8,7 @@ import "../mainPage/MainPage.css";
 export default function Benefits() {
   return (
     <div className="benefitsWrapper">
+      <div id="benefits" className="linkPlace"></div>
       <div className="benefitsMainTitle">Наши преимущества</div>
       <div className="benefitsContainer">
         <div className="benefitsPoint">
@@ -108,7 +109,6 @@ export default function Benefits() {
           </div>
         </div>
       </div>
-      <div id="abouUs" className="linkPlace"></div>
     </div>
   );
 }

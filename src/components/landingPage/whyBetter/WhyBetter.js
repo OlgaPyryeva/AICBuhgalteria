@@ -7,43 +7,43 @@ import "../mainPage/MainPage.css";
 
 export default function WhyBetter() {
   return (
-    <div>
+    <div className="whyBetterBlock">
+      <div id="whyBetter" className="linkPlace"></div>
       <div className="whyBetterTitle">Почему AIC лучше бухгалтера?</div>
       <div className="whyBetterContainer">
         <div className="whyBetterSubtitle">
           <img src={whyBetterPage} alt="{whyBetterPage}" />
-          <h3>Не забудет подать отчет</h3>
-          <p>
+          <div className="whyBetterSubtitleTitle">Не забудет подать отчет</div>
+          <div>
             Система контролирует сроки и полноту подачи отчетности в
             круглосуточном режиме
-          </p>
+          </div>
         </div>
         <div className="whyBetterSubtitle">
           <img src={whyBetterBag} alt="{whyBetterBag}" />
-          <h3>Комфорт в работе</h3>
-          <p>
+          <div className="whyBetterSubtitleTitle">Комфорт в работе</div>
+          <div>
             Всегда в хорошем настроении, не болеет и не уходит в отпуск.
             Доступна с мобильных устройств
-          </p>
+          </div>
         </div>
         <div className="whyBetterSubtitle">
           <img src={whyBetter$} alt="{whyBetter$}" />
-          <h3>Экономия средств</h3>
-          <p>
+          <div className="whyBetterSubtitleTitle">Экономия средств</div>
+          <div>
             Система позволит сэкономить на зарплате бухгалтера, возможных
             штрафах, а, в некоторых случаях, еще и на шоколадках
-          </p>
+          </div>
         </div>
         <div className="whyBetterSubtitle">
           <img src={whyBetterTime} alt="{whyBetterTime}" />
-          <h3>Экономия времени</h3>
-          <p>
+          <div className="whyBetterSubtitleTitle">Экономия времени</div>
+          <div>
             Система позволит сэкономить время, заполнив отчеты за вас и подав их
             в нужный срок, даже если вы забыли это сделать
-          </p>
+          </div>
         </div>
       </div>
-      <div id="benefits" className="linkPlace"></div>
     </div>
   );
 }

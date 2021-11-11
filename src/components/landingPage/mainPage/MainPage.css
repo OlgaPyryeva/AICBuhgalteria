@@ -1,71 +1,123 @@
 .mainWrapper {
   box-sizing: border-box;
-  width: 1600px;
+  max-width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto", sans-serif;
 }
-.mainContainer {
+/* .mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  align-items: center;
+} */
 
 /* стили для Navbar.js */
-
-.css-ancrnh-MuiButtonBase-root-MuiIconButton-root {
-  display: none !important;
+.bg-color,
+.bg-white {
+  height: 100px;
+  max-width: 1600px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9;
 }
-.MuiPaper-root {
-  box-sizing: border-box !important;
-  background: transparent !important;
-  box-shadow: none !important;
+.bg-white {
+  background: transparent;
 }
-.MuiButton-root {
-  width: 200px !important;
-  height: 60px !important;
-  background-color: #fff !important;
-  color: #1565c0 !important;
-  display: block !important;
-  font-weight: bold !important;
-  font-size: 0.875em !important;
-  line-height: 148% !important;
-  letter-spacing: 0.02em !important;
-  text-transform: none !important;
+.bg-color {
+  background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
 }
-
-.css-1juivf6-MuiTypography-root {
-  font-weight: 500 !important;
-  font-size: 1em !important;
-  line-height: 100% !important;
-  text-align: center !important;
-  cursor: pointer !important;
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 29px;
+}
+.burgerMenu {
+  display: none;
+}
+.navbarMenu {
+  width: 50%;
+}
+.navbarMenu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbarMenu ul > li {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.navbarMenu ul:first-child {
+  margin-left: 5px;
+}
+.navbarBtn {
+  box-sizing: border-box;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 148%;
+  letter-spacing: 0.02em;
+  color: #1565c0;
 }
 a {
   color: #fff !important;
   text-decoration: none !important;
 }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  margin-left: 5%;
+  z-index: 7;
+}
 
-@media screen and (max-width: 600px) {
-  .css-ancrnh-MuiButtonBase-root-MuiIconButton-root {
-    display: block !important;
-    margin: 0 50px !important;
-  }
-  .css-1juivf6-MuiTypography-root {
-    display: none !important;
-  }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1565c0;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
 }
-.bg-color {
-  background: linear-gradient(
-    110.34deg,
-    #1565c0 -2.02%,
-    #13f1fc 129.72%
-  ) !important;
+.dropdown-content ul {
+  list-style: none;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* стили для Home.js */
 .homeWrapper {
+  position: relative;
+  top: 0;
+  z-index: 1;
   box-sizing: border-box;
-  height: 626px;
+  min-height: 626px;
   background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
 }
 .homeContainer {
@@ -81,7 +133,7 @@ a {
   margin-top: 80px;
   margin-left: auto;
   width: 45%;
-  height: 450px;
+  min-height: 450px;
 
   font-weight: normal;
   color: #fff;
@@ -140,7 +192,7 @@ a {
 .howWorkWrapper {
   display: flex;
   flex-direction: column;
-  height: 747px;
+  min-height: 747px;
   border: 1px solid rgb(190, 189, 189);
 }
 .howWorkContainer {
@@ -184,21 +236,21 @@ a {
   margin-top: 100px;
 }
 .emptyBlock {
-  height: 140px;
+  min-height: 140px;
 }
 .regSubtitle,
 .signSubtitle {
   text-align: end;
 }
 .regSubtitle {
-  height: 55px;
+  min-height: 55px;
 }
 .bookSubtitle {
   text-align: start;
-  height: 95px;
+  min-height: 95px;
 }
 .signSubtitle {
-  height: 90px;
+  min-height: 90px;
 }
 .dot {
   width: 24px;
@@ -245,7 +297,7 @@ a {
   height: 130px;
 }
 .linkPlace {
-  height: 64px;
+  height: 100px;
 }
 /* стили для Avtorep.js */
 .avtoRepContainer {
@@ -253,23 +305,23 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 430px;
+  min-height: 430px;
   background: url("../../img/avtoRep.svg") 0 0 no-repeat,
     linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%) 0 0 no-repeat;
   color: #fff;
 }
 .avtoRepTitle {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   padding-top: 100px;
   padding-bottom: 20px;
 }
 .avtoRepSubtitle {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
-  height: 66px;
-  width: 502px;
+  min-height: 66px;
+  max-width: 502px;
   text-align: center;
 }
 .avtoRepBtn {
@@ -289,29 +341,28 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 700px;
+  min-height: 700px;
   color: #000;
   border: 1px solid rgb(190, 189, 189);
   border-bottom: 0;
   border-top: 0;
 }
 .whyBetterTitle {
-  width: 80%;
-  margin-left: 10%;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   padding-top: 2%;
   padding-bottom: 2%;
-  /* border: 1px solid rgb(190, 189, 189); */
+  border-left: 1px solid rgba(145, 158, 171, 0.4);
+  border-right: 1px solid rgba(145, 158, 171, 0.4);
   border-bottom: 0;
   box-sizing: border-box;
 }
 .whyBetterSubtitle {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
-  height: 30%;
+  line-height: 150%;
+  min-height: 30%;
   width: 30%;
   text-align: left;
   margin: 1%;
@@ -319,9 +370,15 @@ a {
   box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
   border-radius: 15px;
 }
-.whyBetterSubtitle h3 {
-  padding-bottom: 1%;
+.whyBetterSubtitleTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 136%;
+  color: #25282b;
+  padding-bottom: 15px;
 }
+
 /* стили для блока benefits*/
 .benefitsWrapper {
   display: flex;
@@ -340,14 +397,13 @@ a {
   border-bottom: 0;
 }
 .benefitsMainTitle {
-  width: 80%;
-  margin-left: 10%;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 700;
   padding-top: 2%;
   padding-bottom: 2%;
-  /* border: 1px solid rgb(190, 189, 189); */
+  border-left: 1px solid rgba(145, 158, 171, 0.4);
+  border-right: 1px solid rgba(145, 158, 171, 0.4);
   border-bottom: 0;
   border-top: 0;
   box-sizing: border-box;
@@ -361,7 +417,7 @@ a {
   flex-direction: row;
   align-items: center;
   font-weight: bold;
-  font-size: 1.375em;
+  font-size: 1.375rem;
   line-height: 136%;
   color: #25282b;
 }
@@ -370,18 +426,21 @@ a {
 }
 .benefitsSubtitle {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 150%;
   color: #595e64;
-  height: 20%;
-  width: 470px;
+  min-height: 20%;
+  max-width: 470px;
   text-align: left;
   padding: 20px 30px 20px 0px;
 }
 
 /*carusel about us*/
+.smallCarusel {
+  display: none;
+}
 .aboutUsContainer {
-  height: 623px;
+  min-height: 623px;
   display: flex;
   flex-direction: column;
   background: rgba(231, 242, 239, 0.5);
@@ -405,7 +464,7 @@ a {
   background-image: url("../../img/caruselBtn.svg") !important;
 }
 .slider-slide {
-  margin-top: 5% !important;
+  /* margin-top: 5% !important; */
 }
 .paging-dot {
   padding: 3px !important;
@@ -418,7 +477,7 @@ a {
 }
 /* tarifs*/
 .tarifContainer {
-  height: 760px;
+  min-height: 760px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(190, 189, 189);
@@ -427,7 +486,7 @@ a {
 }
 .tarif {
   width: 25%;
-  height: 520px;
+  min-height: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -494,27 +553,28 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 700px;
+  min-height: 700px;
+  width: 100%;
   border: 1px solid rgb(190, 189, 189);
   border-top: 0;
   border-bottom: 0;
 }
 
 .footerInfoTitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   padding: 15px 0 10px 15px;
   line-height: 28px;
 }
 .footerInfoSubtitle {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   padding: 10px 0 20px 15px;
   line-height: 20px;
 }
 /* footer*/
 .footerContainer {
-  height: 705px;
+  min-height: 705px;
   background: linear-gradient(110.34deg, #1565c0 -2.02%, #13f1fc 129.72%);
 }
 .footerBlocks {
@@ -538,7 +598,7 @@ a {
 }
 .footerFone,
 .footerEmail {
-  font-size: 1.875em;
+  font-size: 1.875rem;
   line-height: 35px;
   color: #fff;
 }
@@ -549,7 +609,7 @@ a {
   margin: 10px 30px 35px 0px;
 }
 .footerCompanyInfo {
-  font-size: 1em;
+  font-size: 1rem;
   color: #fff;
   margin: 35px 35px 35px 0;
 }
@@ -593,7 +653,7 @@ a {
   margin-left: 10px;
 }
 .rightBlockTitle {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   color: #fff;
   padding-bottom: 30px;
@@ -625,14 +685,215 @@ a {
   background: #ffffff;
   border-radius: 10px;
   border: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   letter-spacing: 0.02em;
   color: #1565c0;
   padding: 10px 0 10px 20px;
-  margin: 5px;
+  margin-left: 10%;
 }
 .data {
   margin-top: 40px;
   text-align: center;
+}
+
+@media screen and (max-width: 1330px) {
+  .burgerMenu {
+    display: inline-block;
+    width: 60px;
+    cursor: pointer;
+  }
+  .navbarMenu {
+    display: none;
+  }
+  .navbarBtn {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .footerInfoContainer {
+    flex-direction: column;
+  }
+  .tarifTipes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefitsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bigCarusel {
+    display: none;
+  }
+  .smallCarusel {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .tarif {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homeTitle,
+  .homeSubtitle {
+    margin-left: 17px;
+    align-items: center;
+  }
+  .BtnTry {
+    margin-left: 17px;
+  }
+  .whyBetterContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whyBetterSubtitle {
+    padding: 5px;
+    width: 80%;
+  }
+  .benefitsSubtitle {
+    padding: 5px;
+  }
+  .footerBlocks {
+    flex-direction: column;
+  }
+
+  .footerInfoImg {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .footerCompanyInfo {
+    margin: 5px;
+  }
+  .leftBlock {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .rightBlock {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .footerForm button {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .logo img {
+    margin-left: 17px;
+  }
+
+  .homeTitle,
+  .homeSubtitle {
+    max-width: 375px;
+    margin-left: 17px;
+    align-items: center;
+  }
+  .homeButtons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeButtons button {
+    width: 150px;
+    /* margin-left: 17px; */
+    margin-top: 15px;
+  }
+  .BtnTry {
+    margin-left: 17px;
+  }
+  .avtoRepTitle {
+    margin-left: 17px;
+  }
+  .avtoRepSubtitle {
+    max-width: 375px;
+    width: 100%;
+  }
+  .whyBetterContainer {
+    min-height: 1000px;
+    max-width: 375px;
+    width: 100%;
+    border: 0;
+    margin-left: 17px;
+  }
+  .benefitsContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 0;
+    margin-left: 17px;
+  }
+  .benefitsPoint {
+    flex-direction: column;
+  }
+  .aboutUsContainer {
+    min-height: 200px;
+  }
+  .tarifMainTitle {
+    margin-top: 0;
+  }
+
+  .tarifTipes {
+    justify-content: center;
+  }
+  .tarif {
+    width: 80%;
+    margin-left: 17px;
+  }
+  .leftBlock {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .rightBlock {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .footerForm input {
+    height: 50px;
+    width: 80%;
+  }
+  .footerFormTextarea textarea {
+    min-height: 130px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .navbarBtn {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+  .navbarContainer {
+    max-width: 380px;
+    justify-content: center;
+  }
+  .logo img {
+    width: 80px;
+    /* margin-left: 0; */
+  }
+  .dropdown-content {
+    margin-top: 50px;
+  }
+  .homeText {
+    justify-content: center;
+    margin-top: 100px;
+    min-height: 350px;
+  }
+  .homeTitle {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  .homeSubtitle {
+    font-size: 0.8rem;
+    width: 300px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .whyBetterContainer {
+    min-height: 1000px;
+    margin: 0;
+  }
 }

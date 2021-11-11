@@ -27,7 +27,6 @@ export default function Home() {
           <img src={robot} alt="{robot}" className="homeImg" />
         </div>
       </div>
-      <div id="howWork" className="linkPlace"></div>
     </div>
   );
 }

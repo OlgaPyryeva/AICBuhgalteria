@@ -4,6 +4,7 @@ import "../mainPage/MainPage.css";
 export default function Tarifs() {
   return (
     <div className="tarifContainer">
+      <div id="tarifs" className="linkPlace"></div>
       <div className="tarifMainTitle">Тарифные планы</div>
       <div className="tarifMainSubtitle">
         Первые 2 месяца на тарифе "Бизнес" бесплатны для всех новых
@@ -79,7 +80,6 @@ export default function Tarifs() {
           </div>
         </div>
       </div>
-      <div id="news" className="linkPlace"></div>
     </div>
   );
 }

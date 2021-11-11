@@ -5,6 +5,7 @@ import "../mainPage/MainPage.css";
 export default function HowWork() {
   return (
     <div className="howWorkWrapper">
+      <div id="howWork" className="linkPlace"></div>
       <div className="howWorkTitle">
         <div>Как работает AIC</div>
       </div>

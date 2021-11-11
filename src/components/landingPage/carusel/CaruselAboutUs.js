@@ -7,16 +7,24 @@ export default class extends React.Component {
   render() {
     return (
       <div className="aboutUsContainer">
+        <div id="abouUs" className="linkPlace"></div>
         <div className="aboutUsTitle">О нас пишут</div>
-        <Carousel slidesToShow={3}>
-          <img src={otziv} alt="{otziv}" />
-          <img src={otziv} alt="{otziv}" />
-          <img src={otziv} alt="{otziv}" />
-          <img src={otziv} alt="{otziv}" />
-          <img src={otziv} alt="{otziv}" />
-          <img src={otziv} alt="{otziv}" />
-        </Carousel>
-        <div id="tarifs" className="linkPlace"></div>
+        <div className="bigCarusel">
+          <Carousel slidesToShow={3}>
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+          </Carousel>
+        </div>
+        <div className="smallCarusel">
+          <Carousel slidesToShow={1}>
+            <img src={otziv} alt="{otziv}" />
+            <img src={otziv} alt="{otziv}" />
+          </Carousel>
+        </div>
       </div>
     );
   }
