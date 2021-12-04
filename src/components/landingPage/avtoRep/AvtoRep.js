@@ -1,5 +1,5 @@
 import React from "react";
-import "../mainPage/MainPage.css";
+import "../MainPage.css";
 
 export default function AvtoRep() {
   return (

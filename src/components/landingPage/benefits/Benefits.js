@@ -3,7 +3,7 @@ import checkMarkP from "../../img/checkMarkP.svg";
 import checkMarkB from "../../img/checkMarkB.svg";
 import checkMarkG from "../../img/checkMarkG.svg";
 import checkMarkV from "../../img/checkMarkV.svg";
-import "../mainPage/MainPage.css";
+import "../MainPage.css";
 
 export default function Benefits() {
   return (
