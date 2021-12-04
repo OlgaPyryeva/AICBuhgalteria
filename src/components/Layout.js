@@ -7,6 +7,9 @@ import {
   Route,
 } from "react-router-dom";
 
+import FirstPage from "./FirstPage";
+import DesktopPage from "./DesktopPage/DesktopPage";
+import SignUp from "./SignUp/SignUp";
 import Registration from "./registration/Registration";
 import MainPage from "./landingPage/mainPage/MainPage";
 import NavBar from "./landingPage/home/navbar/NavBar";
@@ -51,6 +54,14 @@ export default function Layout() {
       )}
       <Switch>
         <Route exact path="/" render={() => <MainPage popup={popup} />} />
+        <Route exact path="/" render={() => <FirstPage />} />
+        <Route path="/SignUp" render={() => <SignUp />} />
+        /* временный путь на главную страницу, пока нет авторизации*/
+        <Route path="/test" render={() => <DesktopPage />} />
+        /* после того как сделается авторизация маршратизация на главную
+        страницу будет зависеть от того зарегистрирован пользователь или нет -
+        условие в FirstPage*/
+        {/* <Route path="/SignIn" render={() => <Signin />} /> */}
         {/* <Route path="/Login" render={() => <Login />} /> */}
         {/* <Route path="/SignIn" render={() => <Signin />} /> */}
       </Switch>
