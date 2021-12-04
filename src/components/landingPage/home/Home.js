@@ -1,6 +1,6 @@
 import React from "react";
 import robot from "../../img/robot.svg";
-import "../MainPage.css";
+import "../mainPage/MainPage.css";
 
 export default function Home() {
   return (
