@@ -3,18 +3,10 @@ import { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../../../img/logo.svg";
 import burgerMenu from "../../../img/burgerMenu.svg";
-import x from "../../../img/x.svg";
-import "../../mainPage/MainPage.css";
-// import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../../reducers/userReducer";
+import "../../MainPage.css";
 
-export default function ButtonAppBar(props) {
+export default function ButtonAppBar() {
   const [scroll, setScroll] = useState(false);
-  const { setPopup, popup } = props;
-  // const { setPopupMenu, popupMenu } = props;
-  const isAuth = useSelector((state) => state.user.isAuth);
-  const dispatch = useDispatch();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -80,16 +72,7 @@ export default function ButtonAppBar(props) {
             </li>
           </ul>
         </div>
-        {!isAuth && (
-          <div className="navbarBtn" onClick={() => setPopup(!popup)}>
-            Подключиться
-          </div>
-        )}
-        {isAuth && (
-          <div className="loginIcon">
-            <img src={x} alt={"выход"} onClick={() => dispatch(logout())} />
-          </div>
-        )}
+        <div className="navbarBtn">Подключиться</div>
       </div>
     </div>
   );
