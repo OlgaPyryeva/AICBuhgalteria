@@ -28,7 +28,7 @@ export default function HowWork() {
           <div className="pointsImg">
             <div className="dot"></div>
           </div>
-          <div className="line"></div>
+          <div className="howWorkLine"></div>
           <div className="pointsImgG">
             <div className="dotG"></div>
           </div>

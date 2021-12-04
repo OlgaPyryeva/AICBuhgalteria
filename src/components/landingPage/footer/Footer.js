@@ -1,5 +1,5 @@
 import React from "react";
-import "../mainPage/MainPage.css";
+import "../MainPage.css";
 import logo from "../../img/logo.svg";
 import data from "../../img/data.svg";
 import gmail from "../../img/gmail.svg";

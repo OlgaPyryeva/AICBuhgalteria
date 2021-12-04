@@ -1,11 +1,11 @@
 import React from "react";
 import money from "../../img/money.svg";
 import wallet from "../../img/wallet.svg";
-import "../mainPage/MainPage.css";
+import "../MainPage.css";
 
 export default function FooterInfo() {
   return (
-    <div>
+    <div className="footerInfoWrapper">
       <div id="news" className="linkPlace"></div>
       <div className="footerInfoContainer">
         <div className="footerInfo">
