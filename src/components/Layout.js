@@ -15,7 +15,6 @@ import MainPage from "./landingPage/mainPage/MainPage";
 import NavBar from "./landingPage/home/navbar/NavBar";
 // import SignIn from "./SignIn/SignIn";
 import { useSelector, useDispatch } from "react-redux";
-
 import { auth } from "./actions/user";
 
 export default function Layout() {
@@ -53,9 +52,9 @@ export default function Layout() {
         />
       )}
       <Switch>
-        <Route exact path="/" render={() => <MainPage popup={popup} />} />
-        <Route exact path="/" render={() => <FirstPage />} />
-        <Route path="/SignUp" render={() => <SignUp />} />
+        {/* <Route exact path="/" render={() => <MainPage />} /> */}
+        <Route exact path="/" render={() => <FirstPage popup={popup} />} />
+        {/* <Route path="/SignUp" render={() => <SignUp />} /> */}
         /* временный путь на главную страницу, пока нет авторизации*/
         <Route path="/test" render={() => <DesktopPage />} />
         /* после того как сделается авторизация маршратизация на главную
